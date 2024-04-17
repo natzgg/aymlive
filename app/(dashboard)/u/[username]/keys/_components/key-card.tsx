@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import CopyButton from "./copy-button";
 import { useState } from "react";
 
-const KeyCard = ({ value }: { value: string }) => {
+const KeyCard = ({ value }: { value: string | null }) => {
   const [show, setShow] = useState(false);
 
   return (

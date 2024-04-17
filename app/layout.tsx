@@ -5,6 +5,7 @@ import { dark } from "@clerk/themes";
 import "./globals.css";
 
 import { ThemeProvider } from "@/components/theme-provider";
+import { Toaster } from "sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +32,7 @@ export default function RootLayout({
             forcedTheme="dark"
             storageKey="aymlive-theme"
           >
+            <Toaster theme="light" position="top-right" />
             {children}
           </ThemeProvider>
         </body>
