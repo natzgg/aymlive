@@ -10,11 +10,9 @@ export const onFollow = async (id: string) => {
 
     revalidatePath("/");
 
-    setTimeout(() => {
-      if (followedUser) {
-        revalidatePath(`/${followedUser.following.username}`);
-      }
-    }, 5000);
+    if (followedUser) {
+      revalidatePath(`/${followedUser.following.username}`);
+    }
 
     return followedUser;
   } catch (error) {
