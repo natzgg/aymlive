@@ -1,5 +1,3 @@
-"use client";
-
 import Actions from "./actions";
 import Logo from "./logo";
 import Search from "./search";
